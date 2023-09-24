@@ -4,7 +4,7 @@ import Assignment from "../pages/Assignment";
 
 const publicRoutes = [
   { path: "/", component: Home },
-  { path: "/assignment", component: Assignment },
+  { path: "/assignments", component: Assignment },
 ];
 
 const privateRoutes = [];
