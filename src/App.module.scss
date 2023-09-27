@@ -4,3 +4,18 @@
   margin-left: auto;
   margin-right: auto;
 }
+
+.circle-img,
+.square-img {
+  position: absolute;
+  z-index: -1;
+}
+.square-img {
+  left: -128px;
+  bottom: 20px;
+}
+
+.circle-img {
+  right: -128px;
+  top: 200px;
+}

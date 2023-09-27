@@ -1,4 +1,5 @@
 import classNames from "classnames/bind";
+import { Fragment } from "react";
 import style from "./Home.module.scss";
 
 const cx = classNames.bind(style);
@@ -69,16 +70,6 @@ const Home = function () {
           </li>
         </ul>
       </div>
-
-      <img
-        src="https://fullstack.edu.vn/landing/htmlcss/assets/img/hero-bg-circle.svg"
-        className={cx("circle-img")}
-      />
-
-      <img
-        src="https://fullstack.edu.vn/landing/htmlcss/assets/img/hero-bg-square.svg"
-        className={cx("square-img")}
-      />
     </div>
   );
 };

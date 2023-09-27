@@ -1,5 +1,4 @@
 .home {
-  color: #fff;
 }
 
 .hero {
@@ -9,6 +8,7 @@
 .intro {
   margin-right: 80px;
   width: 500px;
+  color: #fff;
 }
 
 .intro__title {
@@ -47,6 +47,7 @@
   border-right: 2px solid #fff;
   font-size: 2rem;
   line-height: 40px;
+  color: #fff;
 }
 
 .skill-list {
@@ -66,21 +67,6 @@
   width: 45px;
   height: 45px;
   transform: translateY(2px);
-}
-
-.circle-img,
-.square-img {
-  position: absolute;
-  z-index: -1;
-}
-.square-img {
-  left: -128px;
-  bottom: 20px;
-}
-
-.circle-img {
-  right: -128px;
-  top: 200px;
 }
 
 //

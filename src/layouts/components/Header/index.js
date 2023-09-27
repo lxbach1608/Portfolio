@@ -48,8 +48,12 @@ const Header = function () {
       </Link>
       <ul className="header-list">
         <li className="item active">Home</li>
-        <li className="item">About</li>
-        <li className="item">Projects</li>
+        <li className="item">
+          <a href="#about">About</a>
+        </li>
+        <li className="item">
+          <a href="#about">Projects</a>
+        </li>
         <li className="item">Contact</li>
         <span className="line"></span>
       </ul>

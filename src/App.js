@@ -35,6 +35,16 @@ function App() {
             );
           })}
         </Routes>
+
+        <img
+          src="https://fullstack.edu.vn/landing/htmlcss/assets/img/hero-bg-circle.svg"
+          className={cx("circle-img")}
+        />
+
+        <img
+          src="https://fullstack.edu.vn/landing/htmlcss/assets/img/hero-bg-square.svg"
+          className={cx("square-img")}
+        />
       </div>
     </Router>
   );
