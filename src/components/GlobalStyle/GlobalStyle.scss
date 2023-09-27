@@ -1,1 +1,27 @@
 @import "normalize.css";
+
+:root {
+  --primary: #0d1018;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: #0d1018;
+  font-size: 1.6rem;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+// Common styles
+.mt20 {
+  margin-top: 2rem;
+}
