@@ -47,14 +47,18 @@ const Header = function () {
         Bale.dev
       </Link>
       <ul className="header-list">
-        <li className="item active">Home</li>
+        <li className="item active">
+          <Link to="/">Home</Link>
+        </li>
         <li className="item">
-          <a href="#about">About</a>
+          <Link to="/assignment">assignment</Link>
         </li>
         <li className="item">
           <a href="#about">Projects</a>
         </li>
-        <li className="item">Contact</li>
+        <li className="item">
+          <a>Contact</a>
+        </li>
         <span className="line"></span>
       </ul>
     </header>

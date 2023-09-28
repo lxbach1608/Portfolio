@@ -45,8 +45,9 @@
   transition: all 0.3s ease;
 }
 
-.header-list .item {
+.header-list .item a {
   padding: 2rem 2.4rem 2.4rem;
+  display: block;
 }
 
 .header-list .item.active {
