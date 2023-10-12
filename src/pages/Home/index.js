@@ -1,16 +1,27 @@
 import classNames from "classnames/bind";
-import style from "./Home.module.scss";
+import { useEffect, useRef } from "react";
+import style from "./Home.scss";
+
+import images from "../../images";
 
 const cx = classNames.bind(style);
 
 const Home = function () {
+  const el = useRef(null);
+
+  useEffect(() => {});
+
   return (
     <div className={cx("home")}>
       <div className={cx("hero")}>
         <div className={cx("intro")}>
-          <h1 className={cx("intro__title")}>
-            Hi! I'm Bale {<br></br>} Fullstack Developer
-          </h1>
+          <div className={cx("intro__title")}>
+            <span className={cx("text first-text")}>Hi! I'm Bale</span>
+            <br></br>
+            <span ref={el} className={cx("text sec-text")}>
+              Fullstack Developer
+            </span>
+          </div>
           <p className={cx("intro__desc", "mt20")}>
             A{" "}
             <strong className={cx("text-highlight")}>
@@ -22,7 +33,8 @@ const Home = function () {
         <div className={cx("pic")}>
           <img
             className={cx("pic__img")}
-            src="https://i.pinimg.com/564x/d7/c7/97/d7c7978c8043fb0b42672a69b0156006.jpg"
+            src={require("./avt.jpg")}
+            alt="avatar"
           ></img>
         </div>
       </div>
