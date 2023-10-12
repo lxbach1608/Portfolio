@@ -1,0 +1,73 @@
+.assignment {
+  margin-top: 10%;
+}
+
+.assignment-list {
+  width: 40vw;
+  margin-top: 40px;
+}
+
+.item {
+  position: relative;
+}
+
+.lecture {
+  width: 40vw;
+  height: 100px;
+}
+
+.heading {
+  display: block;
+  color: #fff;
+}
+
+.btn {
+  display: block;
+  color: #fff;
+  min-width: 100px;
+  text-align: center;
+  padding: 20px;
+  margin-top: 20px;
+  border: 1px solid #fff;
+  border-radius: 999px;
+  font-weight: 700;
+  background-color: #000;
+}
+
+.btn:hover {
+  cursor: pointer;
+  color: #000;
+  background-color: #fff;
+}
+
+.status {
+  display: none;
+}
+
+.btn:hover ~ .status {
+  display: block;
+  padding: 20px;
+  width: 100px;
+  border: 1px solid #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  background-color: #ebb9d4;
+  border-top-right-radius: 999px;
+  border-bottom-right-radius: 999px;
+  color: #ff0088;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: right;
+  animation: done 0.3s ease forwards;
+}
+
+@keyframes done {
+  from {
+    right: 0;
+  }
+  to {
+    right: -70px;
+  }
+}

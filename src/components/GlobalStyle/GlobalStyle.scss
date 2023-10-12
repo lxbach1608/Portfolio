@@ -16,12 +16,15 @@ html {
 }
 
 body {
-  background-color: #0d1018;
   font-size: 1.6rem;
   font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   overflow-x: hidden;
+}
+
+#root {
+  background-color: var(--primary);
 }
 
 // reset

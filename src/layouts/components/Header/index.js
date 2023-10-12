@@ -51,10 +51,10 @@ const Header = function () {
           <Link to="/">Home</Link>
         </li>
         <li className="item">
-          <Link to="/assignment">assignment</Link>
+          <Link to="/assignments">assignments</Link>
         </li>
         <li className="item">
-          <a href="#about">Projects</a>
+          <a href="#">Projects</a>
         </li>
         <li className="item">
           <a>Contact</a>

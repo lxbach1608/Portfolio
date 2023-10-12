@@ -1,10 +1,10 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 // routes
-import { publicRoutes } from "./routes";
+import { publicRoutes } from "~/routes";
 
 // Layouts
-import DefaultLayout from "./layouts/DefaultLayout";
+import MainLayout from "~/layouts/MainLayout";
 
 // style
 import classNames from "classnames/bind";
@@ -14,11 +14,11 @@ const cx = classNames.bind(style);
 
 function App() {
   return (
-    <Router>
-      <div className={cx("app")}>
+    <div className={cx("app")}>
+      <Router>
         <Routes>
           {publicRoutes.map(function (route, index) {
-            const Layout = DefaultLayout;
+            const Layout = MainLayout;
 
             const Page = route.component;
 
@@ -35,18 +35,18 @@ function App() {
             );
           })}
         </Routes>
+      </Router>
 
-        <img
-          src="https://fullstack.edu.vn/landing/htmlcss/assets/img/hero-bg-circle.svg"
-          className={cx("circle-img")}
-        />
+      <img
+        src="https://fullstack.edu.vn/landing/htmlcss/assets/img/hero-bg-circle.svg"
+        className={cx("circle-img")}
+      />
 
-        <img
-          src="https://fullstack.edu.vn/landing/htmlcss/assets/img/hero-bg-square.svg"
-          className={cx("square-img")}
-        />
-      </div>
-    </Router>
+      <img
+        src="https://fullstack.edu.vn/landing/htmlcss/assets/img/hero-bg-square.svg"
+        className={cx("square-img")}
+      />
+    </div>
   );
 }
 

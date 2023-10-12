@@ -1,5 +1,5 @@
 const images = {
-  avt: "./avt.jpg",
+  avt: "~/images/avt.jpg",
 };
 
 export default images;
