@@ -78,7 +78,7 @@ const Assignment = function () {
 
           <li className={cx("item")}>
             <a
-              href="https://lexuanbach-21110359-cart.onrender.com/cart_apphttps://lexuanbach-21110359-cart.onrender.com/cart_app"
+              href="https://lexuanbach-21110359-cart.onrender.com/cart_app"
               className={cx("btn")}
               target="_blank"
             >
