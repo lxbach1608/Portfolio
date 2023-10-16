@@ -11,7 +11,7 @@ const Loader = function () {
   useEffect(() => {
     const timer = setTimeout(() => {
       setShowLoaderCover(false);
-    }, 1500);
+    }, 1000);
 
     return () => clearTimeout(timer);
   }, []);

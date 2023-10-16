@@ -7,7 +7,7 @@ import AsideRight from "../components/Aside/AsideRight";
 const MainLayout = function ({ children }) {
   return (
     <Fragment>
-      {/* <Loader /> */}
+      <Loader />
       <Header />
       <AsideLeft />
       <AsideRight />
