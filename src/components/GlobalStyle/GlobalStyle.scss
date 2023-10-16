@@ -2,6 +2,23 @@
 
 :root {
   --primary: #0d1018;
+  --navy: #0a192f;
+  --navy-shadow: rgba(2, 12, 27, 0.7);
+  --green: #64ffda;
+  --slate: #8892b0;
+  --light-slate: #a8b2d1;
+  --lightest-slate: #ccd6f6;
+  --lightest-navy: #233554;
+  --light-navy: #112240;
+
+  --font-mono: "SF Mono", monospace;
+
+  --font-sans: "Calibre", sans-serif;
+
+  --fs-sm: 1.3rem;
+  --fs-md: 1.6rem;
+
+  --border-radius-4: 4px;
 }
 
 * {
@@ -17,23 +34,67 @@ html {
 
 body {
   font-size: 1.6rem;
-  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-
-  overflow-x: hidden;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  counter-reset: section;
 }
 
 #root {
-  background-color: var(--primary);
+  background-color: var(--navy);
+}
+
+// Fonts embedded
+@font-face {
+  font-family: "Calibre";
+  src: url("/assets/fonts/Calibre-Regular.woff2");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("/assets/fonts/Calibre-Medium.woff2");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Calibre";
+  src: url("/assets/fonts/Calibre-Semibold.woff2");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "SF Mono";
+  src: url("/assets/fonts/SFMono-Regular.woff2");
+  font-weight: 400;
 }
 
 // reset
 a {
-  text-decoration: none;
   color: inherit;
+  text-decoration: none;
 }
 
-// Common styles
-.mt20 {
-  margin-top: 2rem;
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+// Common
+strong {
+  color: var(--green);
+  font-weight: 400;
+}
+.mt50 {
+  margin-top: 50px;
+}
+
+.ml15 {
+  margin-left: 15px;
 }

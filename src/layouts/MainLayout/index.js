@@ -1,15 +1,18 @@
-import { Header } from "~/layouts/components";
-
+import { Header, AsideLeft, asideRight, Loader } from "~/layouts/components";
 import "./MainLayout.scss";
 
-import { Fragment } from "react";
+import { Fragment, useEffect, useState } from "react";
+import AsideRight from "../components/Aside/AsideRight";
 
 const MainLayout = function ({ children }) {
   return (
     <Fragment>
+      {/* <Loader /> */}
       <Header />
+      <AsideLeft />
+      <AsideRight />
       <div className="container">
-        <div className="content">{children}</div>
+        <main className="content">{children}</main>
       </div>
     </Fragment>
   );
