@@ -1,5 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
+import $ from "jquery";
 
 import classNames from "classnames/bind";
 import style from "./Header.module.scss";
@@ -13,8 +14,40 @@ const cx = classNames.bind(style);
 const Header = function () {
   const [active, setActive] = useState("item");
 
+  const [scrollDirection, setScrollDirection] = useState("down");
+
+  useEffect(() => {
+    let lastScrollTop = 0;
+
+    const handleScroll = () => {
+      const st = window.pageYOffset;
+      if (st > lastScrollTop) {
+        setScrollDirection("down");
+      } else if (st < lastScrollTop) {
+        setScrollDirection("up");
+      }
+      if (st < 30) {
+        setScrollDirection("top");
+      }
+
+      lastScrollTop = st;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
+  const classes = cx("wrapper", {
+    show: scrollDirection === "up",
+    hide: scrollDirection === "down",
+    top: scrollDirection === "top",
+  });
+
   return (
-    <header className={cx("wrapper")}>
+    <header className={classes}>
       <div className={cx("inner")}>
         <div className={cx("logo")}>
           <svg

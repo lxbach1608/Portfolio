@@ -39,6 +39,20 @@
   li:last-child {
     margin-bottom: 20px;
   }
+
+  li:hover {
+    color: var(--green);
+    animation: jump 0.3s forwards;
+  }
+}
+
+@keyframes jump {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-3px);
+  }
 }
 
 .aside-icon {
