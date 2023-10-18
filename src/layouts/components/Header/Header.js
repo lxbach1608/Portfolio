@@ -1,6 +1,5 @@
 import { useEffect, useState, useRef } from "react";
 import { Link } from "react-router-dom";
-import $ from "jquery";
 
 import classNames from "classnames/bind";
 import style from "./Header.module.scss";
@@ -14,7 +13,7 @@ const cx = classNames.bind(style);
 const Header = function () {
   const [active, setActive] = useState("item");
 
-  const [scrollDirection, setScrollDirection] = useState("down");
+  const [scrollDirection, setScrollDirection] = useState("up");
 
   useEffect(() => {
     let lastScrollTop = 0;
@@ -78,16 +77,16 @@ const Header = function () {
         <nav className={cx("nav")}>
           <ol>
             <li className={cx("nav-item")}>
-              <a href="#!">About</a>
+              <a href="#about">About</a>
             </li>
             <li className={cx("nav-item")}>
-              <a href="#!">Experience</a>
+              <a href="#experience">Experience</a>
             </li>
             <li className={cx("nav-item")}>
-              <a href="#!">Assignment</a>
+              <a href="#assignment">Assignment</a>
             </li>
             <li className={cx("nav-item")}>
-              <a href="#!">Contact</a>
+              <a href="#assignment">Contact</a>
             </li>
           </ol>
           <Button ml15>Resume</Button>

@@ -7,7 +7,7 @@ import Button from "~/components/Button";
 
 import classNames from "classnames/bind";
 import style from "./Home.module.scss";
-import { faLink } from "@fortawesome/free-solid-svg-icons";
+import { faEye, faLink } from "@fortawesome/free-solid-svg-icons";
 const cx = classNames.bind(style);
 
 const Home = function () {
@@ -35,7 +35,8 @@ const Home = function () {
         </div>
       </section>
 
-      <section className={cx("about")}>
+      {/* ABOUT */}
+      <section className={cx("about")} id="about">
         <h2 className={cx("number-heading")}>About me</h2>
         <div className={cx("inner")}>
           <div className={cx("info")}>
@@ -81,7 +82,8 @@ const Home = function () {
         </div>
       </section>
 
-      <section className={cx("experience")}>
+      {/* Experience */}
+      <section className={cx("experience")} id="experience">
         <h2 className={cx("number-heading")}>Where I’ve Worked</h2>
         <div className={cx("inner")}>
           <div className={cx("tab-list")}>
@@ -141,7 +143,8 @@ const Home = function () {
         </div>
       </section>
 
-      <section className={cx("assignment")}>
+      {/* assignment */}
+      <section className={cx("assignment")} id="assignment">
         <h2 className={cx("number-heading")}>Lecture's assignments</h2>
         <ul className={cx("assignment-list")}>
           <li className={cx("item", "order")}>
@@ -187,6 +190,10 @@ const Home = function () {
                 href="https://lexuanbach-21110359-exercise5-2.onrender.com/exercise5_2/"
                 target="_blank"
               >
+                <div className={cx("assignment-view")}>
+                  <FontAwesomeIcon icon={faEye} />
+                  <p>View</p>
+                </div>
                 <img src={images.ex52} />
               </a>
             </div>
@@ -235,6 +242,10 @@ const Home = function () {
                 href="https://lexuanbach-21110359-survey.onrender.com/survey/"
                 target="_blank"
               >
+                <div className={cx("assignment-view")}>
+                  <FontAwesomeIcon icon={faEye} />
+                  <p>View</p>
+                </div>
                 <img src={images.survey} />
               </a>
             </div>
@@ -283,6 +294,10 @@ const Home = function () {
                 href="https://lexuanbach-21110359-emaillist.onrender.com/emaillist/"
                 target="_blank"
               >
+                <div className={cx("assignment-view")}>
+                  <FontAwesomeIcon icon={faEye} />
+                  <p>View</p>
+                </div>
                 <img src={images.email} />
               </a>
             </div>
@@ -331,6 +346,10 @@ const Home = function () {
                 href="https://lexuanbach-21110359-download.onrender.com/download_app/"
                 target="_blank"
               >
+                <div className={cx("assignment-view")}>
+                  <FontAwesomeIcon icon={faEye} />
+                  <p>View</p>
+                </div>
                 <img src={images.download} />
               </a>
             </div>
@@ -379,6 +398,10 @@ const Home = function () {
                 href="https://lexuanbach-21110359-cart.onrender.com/cart_app"
                 target="_blank"
               >
+                <div className={cx("assignment-view")}>
+                  <FontAwesomeIcon icon={faEye} />
+                  <p>View</p>
+                </div>
                 <img src={images.cart} />
               </a>
             </div>
