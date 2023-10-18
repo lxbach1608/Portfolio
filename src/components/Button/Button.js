@@ -4,6 +4,7 @@ import style from "./Button.module.scss";
 const cx = classNames.bind(style);
 
 const Button = function ({
+  large,
   children,
   to,
   href,
@@ -20,6 +21,7 @@ const Button = function ({
   };
 
   const classes = cx("wrapper", {
+    large,
     mt50,
     ml15,
   });

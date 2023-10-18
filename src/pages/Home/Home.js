@@ -31,7 +31,9 @@ const Home = function () {
           </p>
         </div>
         <div className={cx("fadeup-enter-done")}>
-          <Button mt50>Check out my portfolio!</Button>
+          <Button large mt50>
+            Check out my portfolio!
+          </Button>
         </div>
       </section>
 
