@@ -30,9 +30,9 @@ const Button = function ({
 
   return (
     <>
-      <motion.button className={classes} {..._props} whileTap={{ scale: 1.1 }}>
+      <button className={classes} {..._props} whileTap={{ scale: 1.1 }}>
         <span>{children}</span>
-      </motion.button>
+      </button>
     </>
   );
 };
