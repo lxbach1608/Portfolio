@@ -44,23 +44,24 @@ const Home = function () {
           <div className={cx("info")}>
             <div className={cx("text")}>
               <p>
-                Hello! My name is Brittany and I enjoy creating things that live
-                on the internet. My interest in web development started back in
-                2012 when I decided to try editing custom Tumblr themes — turns
-                out hacking together a custom reblog button taught me a lot
-                about HTML & CSS!
+                Hello! My name is Bach, you can call me Bale. I enjoy creating
+                things that live on the internet. My interest in web development
+                started back in 2020 when I decided to try creating something
+                that make a valuable product for society.
               </p>
               <p>
-                Fast-forward to today, and I’ve had the privilege of working at
-                an advertising agency, a start-up, a huge corporation, and a
-                student-led design studio. My main focus these days is building
-                accessible, inclusive products and digital experiences at
-                Upstatement for a variety of clients.
+                Fast-forward to today, I'm a dedicated student currently
+                enrolled at the Ho Chi Minh City University of Technology and
+                Education (HCMUTE). My academic journey at HCMUTE has been a
+                remarkable experience filled with learning, growth, and exciting
+                challenges. As I pursue my education in this esteemed
+                institution, I am passionate about Information and Technology
+                and continually strive to expand my knowledge and contribute to
+                my field. I look forward to sharing my academic and personal
+                experiences with you as I continue on this educational adventure
+                at HCMUTE.
               </p>
-              <p>
-                I also recently launched a course that covers everything you
-                need to build a web app with the Spotify API using Node & React.
-              </p>
+
               <p>
                 Here are a few technologies I’ve been working with recently:
               </p>
@@ -120,24 +121,27 @@ const Home = function () {
                   Deliver high-quality, robust production code for a diverse
                   array of projects for clients including Harvard Business
                   School, Everytown for Gun Safety, Pratt Institute, Koala
-                  Health, Vanderbilt University, The 19th News, and more
+                  Health, Vanderbilt University, The 19th News, and more (it's
+                  fake, just for demo)
                 </li>
 
                 <li>
                   Work alongside creative directors to lead the research,
                   development, and architecture of technical solutions to
-                  fulfill business requirements
+                  fulfill business requirements (it's fake, just for demo)
                 </li>
 
                 <li>
                   Collaborate with designers, project managers, and other
                   engineers to transform creative concepts into production
-                  realities for clients and stakeholders
+                  realities for clients and stakeholders (it's fake, just for
+                  demo)
                 </li>
 
                 <li>
                   Provide leadership within engineering department through close
-                  collaboration, knowledge shares, and mentorship
+                  collaboration, knowledge shares, and mentorship (it's fake,
+                  just for demo)
                 </li>
               </ul>
             </div>
@@ -155,7 +159,7 @@ const Home = function () {
 
               <h3 className={cx("assignment-title")}>
                 <a
-                  href="https://lexuanbach-21110359-exercise5-2.onrender.com/exercise5_2/"
+                  href="https://lexuanbach-21110359-exercise5-2.onrender.com/ex_5_52/"
                   target="_blank"
                 >
                   Exercise 5.2
@@ -179,7 +183,7 @@ const Home = function () {
               </ul>
 
               <div className={cx("project-links")}>
-                <a href="https://lexuanbach-21110359-exercise5-2.onrender.com/exercise5_2/">
+                <a href="https://lexuanbach-21110359-exercise5-2.onrender.com/ex_5_52/">
                   <FontAwesomeIcon
                     icon={faLink}
                     className={cx("assignment-link-icon")}
@@ -189,7 +193,7 @@ const Home = function () {
             </div>
             <div className={cx("assignment-img")}>
               <a
-                href="https://lexuanbach-21110359-exercise5-2.onrender.com/exercise5_2/"
+                href="https://lexuanbach-21110359-exercise5-2.onrender.com/ex_5_52/"
                 target="_blank"
               >
                 <div className={cx("assignment-view")}>
@@ -207,7 +211,7 @@ const Home = function () {
 
               <h3 className={cx("assignment-title")}>
                 <a
-                  href="https://lexuanbach-21110359-survey.onrender.com/survey/"
+                  href="https://lexuanbach-21110359-emaillist.onrender.com/emailListApp/"
                   target="_blank"
                 >
                   Survey Application
@@ -231,7 +235,7 @@ const Home = function () {
               </ul>
 
               <div className={cx("project-links")}>
-                <a href="https://lexuanbach-21110359-survey.onrender.com/survey/">
+                <a href="https://lexuanbach-21110359-emaillist.onrender.com/emailListApp/">
                   <FontAwesomeIcon
                     icon={faLink}
                     className={cx("assignment-link-icon")}
@@ -241,7 +245,7 @@ const Home = function () {
             </div>
             <div className={cx("assignment-img")}>
               <a
-                href="https://lexuanbach-21110359-survey.onrender.com/survey/"
+                href="https://lexuanbach-21110359-emaillist.onrender.com/emailListApp/"
                 target="_blank"
               >
                 <div className={cx("assignment-view")}>
@@ -259,7 +263,7 @@ const Home = function () {
 
               <h3 className={cx("assignment-title")}>
                 <a
-                  href="https://lexuanbach-21110359-emaillist.onrender.com/emaillist/"
+                  href="https://lexuanbach-21110359-emaillist.onrender.com/emailListApp/"
                   target="_blank"
                 >
                   EmailList
@@ -283,7 +287,7 @@ const Home = function () {
               </ul>
 
               <div className={cx("project-links")}>
-                <a href="https://lexuanbach-21110359-emaillist.onrender.com/emaillist/">
+                <a href="https://lexuanbach-21110359-emaillist.onrender.com/emailListApp/">
                   <FontAwesomeIcon
                     icon={faLink}
                     className={cx("assignment-link-icon")}
@@ -293,7 +297,7 @@ const Home = function () {
             </div>
             <div className={cx("assignment-img")}>
               <a
-                href="https://lexuanbach-21110359-emaillist.onrender.com/emaillist/"
+                href="https://lexuanbach-21110359-emaillist.onrender.com/emailListApp/"
                 target="_blank"
               >
                 <div className={cx("assignment-view")}>
@@ -311,7 +315,7 @@ const Home = function () {
 
               <h3 className={cx("assignment-title")}>
                 <a
-                  href="https://lexuanbach-21110359-download.onrender.com/download_app/"
+                  href="https://lexuanbach-21110359-download.onrender.com/downloadApp/"
                   target="_blank"
                 >
                   Download Application
@@ -335,7 +339,7 @@ const Home = function () {
               </ul>
 
               <div className={cx("project-links")}>
-                <a href="https://lexuanbach-21110359-download.onrender.com/download_app/">
+                <a href="https://lexuanbach-21110359-download.onrender.com/downloadApp/">
                   <FontAwesomeIcon
                     icon={faLink}
                     className={cx("assignment-link-icon")}
@@ -345,7 +349,7 @@ const Home = function () {
             </div>
             <div className={cx("assignment-img")}>
               <a
-                href="https://lexuanbach-21110359-download.onrender.com/download_app/"
+                href="https://lexuanbach-21110359-download.onrender.com/downloadApp/"
                 target="_blank"
               >
                 <div className={cx("assignment-view")}>
@@ -363,7 +367,7 @@ const Home = function () {
 
               <h3 className={cx("assignment-title")}>
                 <a
-                  href="https://lexuanbach-21110359-cart.onrender.com/cart_app"
+                  href="https://lexuanbach-21110359-cart.onrender.com/cartApp/"
                   target="_blank"
                 >
                   Cart Application
@@ -387,7 +391,7 @@ const Home = function () {
               </ul>
 
               <div className={cx("project-links")}>
-                <a href="https://lexuanbach-21110359-cart.onrender.com/cart_app">
+                <a href="https://lexuanbach-21110359-cart.onrender.com/cartApp/">
                   <FontAwesomeIcon
                     icon={faLink}
                     className={cx("assignment-link-icon")}
@@ -397,7 +401,7 @@ const Home = function () {
             </div>
             <div className={cx("assignment-img")}>
               <a
-                href="https://lexuanbach-21110359-cart.onrender.com/cart_app"
+                href="https://lexuanbach-21110359-cart.onrender.com/cartApp/"
                 target="_blank"
               >
                 <div className={cx("assignment-view")}>
