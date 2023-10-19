@@ -81,6 +81,18 @@
 //   -webkit-background-clip: text;
 // }
 
+// animation
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: -webkit-linear-gradient(45deg, #5ebbff -33%, #a174ff 69%);
+  transform-origin: 0%;
+  z-index: 100000;
+}
+
 .hero {
   display: flex;
   flex-direction: column;

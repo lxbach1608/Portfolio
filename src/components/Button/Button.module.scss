@@ -8,6 +8,7 @@
   border-radius: 4px;
   font-family: var(--font-mono);
   transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  cursor: pointer;
 }
 
 .wrapper:hover {
@@ -18,4 +19,11 @@
 
 .large {
   padding: 20px 28px;
+}
+
+.example-container button {
+  background: white;
+  border-radius: 2px;
+  width: 150px;
+  height: 150px;
 }

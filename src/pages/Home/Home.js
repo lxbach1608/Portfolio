@@ -1,29 +1,61 @@
 import { Fragment, useEffect, useRef } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEye, faLink } from "@fortawesome/free-solid-svg-icons";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { motion, useScroll, useSpring } from "framer-motion";
 
 import images from "~/assets/images";
 import Button from "~/components/Button";
 
 import classNames from "classnames/bind";
 import style from "./Home.module.scss";
-import { faEye, faLink } from "@fortawesome/free-solid-svg-icons";
 const cx = classNames.bind(style);
 
 const Home = function () {
+  AOS.init();
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
+
   return (
     <Fragment>
+      <motion.div className={cx("progress-bar")} style={{ scaleX }} />
       <section className={cx("hero")}>
-        <div className={cx("fadeup-enter-done")}>
+        <div
+          className={cx("fadeup-enter-done")}
+          data-aos="fade-right"
+          data-aos-delay="1000"
+          data-aos-duration="1000"
+        >
           <h3>Hi, my name is</h3>
         </div>
-        <div className={cx("fadeup-enter-done")}>
+        <div
+          className={cx("fadeup-enter-done")}
+          data-aos="fade-right"
+          data-aos-delay="1300"
+          data-aos-duration="1000"
+        >
           <h1 className={cx("heading")}>Le Xuan Bach.</h1>
         </div>
-        <div className={cx("fadeup-enter-done")}>
+        <div
+          className={cx("fadeup-enter-done")}
+          data-aos="fade-right"
+          data-aos-delay="1500"
+          data-aos-duration="1000"
+        >
           <h2 className={cx("heading")}>I build things for the web.</h2>
         </div>
-        <div className={cx("fadeup-enter-done")}>
+        <div
+          className={cx("fadeup-enter-done")}
+          data-aos="fade-right"
+          data-aos-delay="1800"
+          data-aos-duration="1000"
+        >
           <p>
             I’m a <strong>passionate software engineer</strong> specializing in
             building exceptional digital experiences. Currently, i'm focused on
@@ -75,7 +107,12 @@ const Home = function () {
               <li>MongoDB</li>
             </ul>
           </div>
-          <div className={cx("img")}>
+          <div
+            className={cx("img")}
+            data-aos="flip-right"
+            data-aos-duration="1000"
+            data-aos-delay="200"
+          >
             <div className={cx("img-wrapper")}>
               <picture>
                 <img src={images.avatar} className={cx("avt-img")} />
@@ -153,7 +190,11 @@ const Home = function () {
       <section className={cx("assignment")} id="assignment">
         <h2 className={cx("number-heading")}>Lecture's assignments</h2>
         <ul className={cx("assignment-list")}>
-          <li className={cx("item", "order")}>
+          <li
+            className={cx("item", "order")}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div className={cx("assignment-content")}>
               <p className={cx("assignment-overline")}>Featured Project</p>
 
@@ -205,7 +246,11 @@ const Home = function () {
             </div>
           </li>
 
-          <li className={cx("item", "order")}>
+          <li
+            className={cx("item", "order")}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div className={cx("assignment-content")}>
               <p className={cx("assignment-overline")}>Featured Project</p>
 
@@ -257,7 +302,11 @@ const Home = function () {
             </div>
           </li>
 
-          <li className={cx("item", "order")}>
+          <li
+            className={cx("item", "order")}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div className={cx("assignment-content")}>
               <p className={cx("assignment-overline")}>Featured Project</p>
 
@@ -309,7 +358,11 @@ const Home = function () {
             </div>
           </li>
 
-          <li className={cx("item", "order")}>
+          <li
+            className={cx("item", "order")}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div className={cx("assignment-content")}>
               <p className={cx("assignment-overline")}>Featured Project</p>
 
@@ -361,7 +414,11 @@ const Home = function () {
             </div>
           </li>
 
-          <li className={cx("item", "order")}>
+          <li
+            className={cx("item", "order")}
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+          >
             <div className={cx("assignment-content")}>
               <p className={cx("assignment-overline")}>Featured Project</p>
 
